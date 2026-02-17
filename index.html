@@ -16,13 +16,13 @@
 
     <div class="logo">JS</div>
 
-    <!-- Checkbox (Mobile Only) -->
+    <!-- Hidden checkbox -->
     <input type="checkbox" id="menu-toggle">
 
-    <!-- Hamburger Icon -->
+    <!-- Hamburger icon -->
     <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-    <!-- Navigation Links -->
+    <!-- Nav links -->
     <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -81,7 +81,7 @@
 
       <div class="project-card">
         <h3>SQL Sales Analysis</h3>
-        <p>Retail dataset exploration using joins, aggregations and trend analysis.</p>
+        <p>Retail dataset exploration using joins and trend analysis.</p>
         <a href="https://github.com/jidya/Retail-Sales-SQL-Analysis"
            target="_blank"
            class="btn">View Project</a>
@@ -89,7 +89,7 @@
 
       <div class="project-card">
         <h3>Power BI Dashboard</h3>
-        <p>Interactive KPI dashboard for business performance monitoring.</p>
+        <p>Interactive KPI dashboard for business monitoring.</p>
       </div>
 
       <div class="project-card">
@@ -125,15 +125,20 @@
   © 2026 Jidnyasa Sonavane
 </footer>
 
+<!-- JS to close menu after click -->
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+
   const menuToggle = document.getElementById("menu-toggle");
   const navLinks = document.querySelectorAll(".nav-links a");
 
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
+  navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
       menuToggle.checked = false;
     });
   });
+
+});
 </script>
 
 </body>
