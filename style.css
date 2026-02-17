@@ -56,7 +56,7 @@ nav {
   display: none;
 }
 
-/* Hamburger */
+/* Hamburger hidden by default */
 .hamburger {
   display: none;
   font-size: 26px;
@@ -172,15 +172,18 @@ footer {
   color: #cbd5e1;
 }
 
-/* ================= MOBILE ================= */
+/* ================= MOBILE ONLY ================= */
 
 @media (max-width: 768px) {
 
+  /* Show hamburger */
   .hamburger {
     display: block;
   }
 
+  /* Hide desktop links */
   .nav-links {
+    display: none;
     position: absolute;
     top: 60px;
     left: 0;
@@ -188,11 +191,11 @@ footer {
     background: #111827;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
     padding: 20px 0;
-    display: none;
+    gap: 20px;
   }
 
+  /* Show when checked */
   #menu-toggle:checked ~ .nav-links {
     display: flex;
   }
