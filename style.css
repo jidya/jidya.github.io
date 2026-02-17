@@ -77,12 +77,11 @@ footer {
   margin-bottom: 20px;
 }
 
-.project-card {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  transition: 0.3s ease;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
 }
 
 .project-card:hover {
