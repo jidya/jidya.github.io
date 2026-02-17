@@ -80,12 +80,13 @@ footer {
   margin-bottom: 20px;
 }
 
-#projects {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: 0 auto 80px auto;
-  background: transparent;   /* keep clean */
+#projects .card {
+  background: #f8fafc;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
 }
+
 
 .section-title {
   margin-bottom: 30px;
@@ -94,18 +95,31 @@ footer {
 
 .projects-grid {
   display: grid;
-  gap: 24px; /* small controlled spacing */
-  
+  gap: 20px;
+  margin-top: 25px;
 }
 
+
 .project-card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  border: 1px solid #e2e8f0;
-  transition: all 0.25s ease;
-  position: relative;
+  padding: 25px;
+  border-radius: 14px;
+  transition: all 0.2s ease;
 }
+.project-1 {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.project-2 {
+  background: #f1f5ff;
+  border: 1px solid #dbeafe;
+}
+
+.project-3 {
+  background: #f8fdfc;
+  border: 1px solid #d1fae5;
+}
+
 .project-card::before {
   content: "";
   position: absolute;
@@ -118,9 +132,8 @@ footer {
   border-top-right-radius: 16px;
 }
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-  border-color: #cbd5e1;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  transform: translateY(-3px);
 }
 
 
