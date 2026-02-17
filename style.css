@@ -1,35 +1,24 @@
-/* =========================
-   GLOBAL
-========================= */
+/* ================= GLOBAL ================= */
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom, #f8fafc, #eef2f7);
   color: #1f2937;
-  margin: 0;
 }
 
-section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: 0 auto 60px auto;
-  scroll-margin-top: 80px;
-}
-
-/* =========================
-   NAVBAR
-========================= */
+/* ================= NAVBAR ================= */
 
 nav {
   background: #111827;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .nav-container {
@@ -44,6 +33,7 @@ nav {
 .logo {
   color: white;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .nav-links {
@@ -74,18 +64,16 @@ nav {
   cursor: pointer;
 }
 
-/* =========================
-   HERO
-========================= */
+/* ================= HERO ================= */
 
 .hero {
   text-align: center;
-  padding: 80px 20px 60px;
+  padding: 90px 20px 70px;
   background: linear-gradient(to bottom, #f8fafc, #eef2ff);
 }
 
 .hero h1 {
-  font-size: 38px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
@@ -95,21 +83,24 @@ nav {
   margin-bottom: 20px;
 }
 
-/* =========================
-   CARD
-========================= */
+/* ================= SECTION ================= */
+
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+}
+
+/* ================= CARD ================= */
 
 .card {
   background: #ffffff;
   padding: 40px;
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  margin-top: 20px;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* ================= BUTTON ================= */
 
 .btn {
   display: inline-block;
@@ -119,16 +110,13 @@ nav {
   text-decoration: none;
   border-radius: 8px;
   font-weight: 500;
-  transition: 0.2s ease;
 }
 
 .btn:hover {
   background-color: #1e40af;
 }
 
-/* =========================
-   SKILLS
-========================= */
+/* ================= SKILLS ================= */
 
 .skills-tags {
   display: flex;
@@ -139,16 +127,12 @@ nav {
 
 .skills-tags span {
   background: #eef2ff;
-  color: #1e3a8a;
   padding: 10px 16px;
   border-radius: 25px;
   font-size: 14px;
-  font-weight: 500;
 }
 
-/* =========================
-   PROJECTS
-========================= */
+/* ================= PROJECTS ================= */
 
 .projects-grid {
   display: grid;
@@ -160,7 +144,6 @@ nav {
   padding: 25px;
   border-radius: 14px;
   border: 1px solid #e5e7eb;
-  background: #ffffff;
   transition: 0.2s ease;
 }
 
@@ -168,14 +151,11 @@ nav {
   box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* ================= CONTACT ================= */
 
 #contact a {
   color: #2563eb;
   text-decoration: none;
-  font-weight: 500;
   word-break: break-word;
 }
 
@@ -183,81 +163,18 @@ nav {
   text-decoration: underline;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ================= FOOTER ================= */
 
 footer {
   text-align: center;
   padding: 25px;
   background: #0f172a;
   color: #cbd5e1;
-  font-size: 14px;
 }
 
-/* =========================
-   TABLET (768px)
-========================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
-
-  .card {
-    padding: 28px;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-}
-
-/* =========================
-   MOBILE (480px / 320px)
-========================= */
-
-@media (max-width: 480px) {
-
-  section {
-    padding: 60px 16px;
-  }
-
-  .hero {
-    padding: 60px 16px 40px;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-    line-height: 1.3;
-  }
-
-  .hero p {
-    font-size: 15px;
-  }
-
-  .btn {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 16px;
-  }
-
-  .project-card {
-    padding: 20px;
-  }
-
-  .skills-tags {
-    justify-content: center;
-  }
-
-  .skills-tags span {
-    font-size: 13px;
-    padding: 8px 14px;
-  }
-
-  /* Hamburger menu active */
 
   .hamburger {
     display: block;
@@ -280,4 +197,26 @@ footer {
     display: flex;
   }
 
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+}
+
+/* ================= DESKTOP GRID ================= */
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
