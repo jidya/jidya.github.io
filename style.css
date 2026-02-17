@@ -178,3 +178,46 @@ footer {
 #contact a:hover {
   text-decoration: underline;
 }
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 14px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 60px 16px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .projects-grid {
+    gap: 16px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+}
