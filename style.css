@@ -200,25 +200,16 @@ footer {
     margin: 0;
   }
 
-}
-
-  @media (max-width: 480px) {
   section {
     padding: 60px 14px;
   }
-}
-
-
-  @media (max-width: 768px) {
 
   .card {
     padding: 22px;
     border-radius: 16px;
   }
 
-}
 
-  @media (max-width: 480px) {
 
   .hero {
      padding: 60px 18px 40px;
@@ -233,8 +224,7 @@ footer {
     font-size: 15px;
   }
 
-}
-@media (max-width: 480px) {
+
 
   #about .btn,
   .hero .btn {
@@ -243,24 +233,17 @@ footer {
     margin-top: 16px;
   }
 
-}
- @media (max-width: 480px) {
 
   .project-card {
     padding: 20px;
   }
-   .project-card .btn {
+  .project-card .btn {
     display: block;
-    width: 100%;
-    margin-top: 16px;
+    width: calc(100% - 10px);
+    margin: 16px auto 0 auto;
     border-radius: 10px;
   }
 
-}
-  
-
-
-@media (max-width: 480px) {
 
   .skills-tags {
     justify-content: center;
@@ -274,8 +257,6 @@ footer {
 }
 #contact a {
   word-break: break-word;
-}
-@media (max-width: 480px) {
 
   #contact .card {
     text-align: left;
