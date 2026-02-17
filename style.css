@@ -13,19 +13,32 @@ body {
 
 nav {
   background: #111827;
-  padding: 16px;
-  text-align: center;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 16px 20px;
+
+  flex-wrap: nowrap;   /* IMPORTANT */
+  overflow-x: auto;    /* allow scroll if needed */
+  white-space: nowrap; /* keep in one line */
+}
+
+nav::-webkit-scrollbar {
+  display: none;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 18px;
-  font-size: 15px;
   font-weight: 500;
+  font-size: 15px;
+  flex-shrink: 0; /* prevents shrinking */
 }
 
 nav a:hover {
@@ -148,30 +161,7 @@ footer {
   font-size: 14px;
 }
 
-/* ================= Mobile nav bar ================= */
-@media (max-width: 480px) {
 
-  nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 14px 12px;
-  }
-
-  nav::-webkit-scrollbar {
-    display: none; /* hide scroll bar */
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0 14px 0 0;
-    font-size: 14px;
-    flex-shrink: 0;
-  }
-
-}
 
 /* ================= TABLET (768px) ================= */
 
