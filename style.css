@@ -1,8 +1,3 @@
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f8f9fa;
-  color: #1f2937;
-}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -12,34 +7,33 @@ body {
 }
 
 nav {
-    background: #111827;
-    padding: 15px;
-    text-align: center;
+  background: #111827;
+  padding: 18px;
+  text-align: center;
+  position: sticky;
+  top: 0;
 }
 
- nav a {
-     color: white;
-     margin: 0 15px;
-     text-decoration: none;
-     font-weight: bold;
- }
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
 
 nav a:hover {
-     color: #60a5fa;
+  color: #60a5fa;
 }
 
-header {
-    background-color: #1f2937;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
+
 
 section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
+  padding: 80px 10%;
+  max-width: 900px;
+  margin: auto;
 }
+
 
 h2 {
     color: #1f2937;
@@ -60,28 +54,13 @@ footer {
   color: white;
 }
 
-.project-btn {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 8px 16px;
-    background-color: #2ecc71;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-        
-.project-btn:hover {
-    background-color: #27ae60;
-    transform: translateY(-2px);
-}
 
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
+  background: #ffffff;
 }
+
 
 .hero h1 {
   font-size: 42px;
@@ -93,9 +72,7 @@ footer {
   color: #555;
   margin-bottom: 20px;
 }
-section {
-  padding: 80px 10%;
-}
+
 .project-card {
   background: #ffffff;
   padding: 25px;
@@ -104,6 +81,15 @@ section {
   max-width: 600px;
   margin: auto;
 }
+.project-card {
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -116,4 +102,12 @@ section {
 
 .btn:hover {
   background-color: #1e40af;
+}
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  padding: 6px 0;
 }
