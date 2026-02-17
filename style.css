@@ -4,6 +4,9 @@ body {
   color: #1f2937;
   margin: 0;
 }
+* {
+  box-sizing: border-box;
+}
 
 nav {
   background: #111827;
@@ -231,27 +234,30 @@ footer {
   }
 
 }
+@media (max-width: 480px) {
+
+  #about .btn,
+  .hero .btn {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+}
  @media (max-width: 480px) {
 
   .project-card {
     padding: 20px;
   }
    .project-card .btn {
-    width: 100%;
-    border-radius: 10px;
-  }
- }
-  @media (max-width: 480px) {
-
-  .btn {
-    width: auto;
     display: block;
-    margin: 16px auto 0 auto;
-    text-align: center;
-    padding: 12px 20px;
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 10px;
   }
 
 }
+  
 
 
 @media (max-width: 480px) {
