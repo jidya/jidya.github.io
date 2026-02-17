@@ -60,6 +60,24 @@
             background: #1f2937;
             color: white;
         }
+        .project-btn {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 8px 16px;
+            background-color: #2ecc71;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+        
+        .project-btn:hover {
+            background-color: #27ae60;
+            transform: translateY(-2px);
+        }
+
     </style>
 </head>
 
@@ -120,13 +138,16 @@
     <div class="card">
         <h2>Projects</h2>
 
-        <p>
-          <a href="https://github.com/jidya/Retail-Sales-SQL-Analysis" 
-             target="_blank"
-             style="display:inline-block; padding:6px 12px; background:#4CAF50; color:white; text-decoration:none; border-radius:4px;">
-             View Project →
-          </a>
-        </p>
+       <p>
+          <strong>SQL Sales Analysis</strong><br>
+          Retail dataset exploration using joins, aggregations, window functions, and trend analysis.
+       </p>
+        
+        <a href="https://github.com/jidya/Retail-Sales-SQL-Analysis" 
+           target="_blank" 
+           class="project-btn">
+           View Project →
+        </a>
 
 
         <p><strong>Power BI Dashboard</strong><br>
