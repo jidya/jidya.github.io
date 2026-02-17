@@ -148,6 +148,31 @@ footer {
   font-size: 14px;
 }
 
+/* ================= Mobile nav bar ================= */
+@media (max-width: 480px) {
+
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 14px 12px;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none; /* hide scroll bar */
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 14px 0 0;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+}
+
 /* ================= TABLET (768px) ================= */
 
 @media (min-width: 768px) {
