@@ -30,7 +30,7 @@ nav a:hover {
 
 section {
   padding: 80px 10%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -40,30 +40,34 @@ h2 {
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
+
 
 footer {
   text-align: center;
-  padding: 20px;
-  background: #1f2937;
-  color: white;
+  padding: 25px;
+  background: #0f172a;
+  color: #cbd5e1;
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
+
 
 
 .hero {
   text-align: center;
-  padding: 120px 20px;
-  background: #ffffff;
+  padding: 80px 20px 60px;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
 }
 
 
+
 .hero h1 {
-  font-size: 42px;
+  font-size: 38px;
   margin-bottom: 10px;
 }
 
@@ -76,19 +80,16 @@ footer {
 .project-card {
   background: #ffffff;
   padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  max-width: 600px;
-  margin: auto;
-}
-.project-card {
-  margin-bottom: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
   transition: 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
+
 
 .btn {
   display: inline-block;
@@ -110,4 +111,36 @@ footer {
 
 #skills li {
   padding: 6px 0;
+}
+#about {
+  margin-top: 40px;
+}
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.skills-tags span {
+  background: #e0e7ff;
+  color: #1e3a8a;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+#contact p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+#contact a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
