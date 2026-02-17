@@ -256,3 +256,19 @@ footer {
   }
 
 }
+#contact a {
+  word-break: break-word;
+}
+@media (max-width: 480px) {
+
+  #contact .card {
+    text-align: left;
+  }
+
+  #contact p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 12px 0;
+  }
+
+}
