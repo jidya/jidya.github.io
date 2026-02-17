@@ -81,11 +81,12 @@ footer {
 }
 
 #projects .card {
-  background: #f8fafc;
+  background: #ffffff;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
+
 
 
 .section-title {
@@ -190,4 +191,7 @@ footer {
 
 #contact a:hover {
   text-decoration: underline;
+}
+section {
+  scroll-margin-top: 80px;
 }
