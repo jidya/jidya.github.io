@@ -1,22 +1,28 @@
-/* =============================
+/* =========================
    GLOBAL
-============================= */
+========================= */
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom, #f8fafc, #eef2f7);
   color: #1f2937;
+  margin: 0;
 }
 
-/* =============================
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  scroll-margin-top: 80px;
+}
+
+/* =========================
    NAVBAR
-============================= */
+========================= */
 
 nav {
   background: #111827;
@@ -24,77 +30,86 @@ nav {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  padding: 16px 20px;
 }
 
-nav a {
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
-  transition: 0.2s ease;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #60a5fa;
 }
 
-/* =============================
-   SECTIONS
-============================= */
-
-section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: 0 auto 60px auto;
-  scroll-margin-top: 90px;
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
 }
 
-h2 {
-  font-size: 28px;
-  margin-bottom: 25px;
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
 }
 
-/* =============================
+/* =========================
    HERO
-============================= */
+========================= */
 
 .hero {
   text-align: center;
-  padding: 90px 20px 70px;
+  padding: 80px 20px 60px;
   background: linear-gradient(to bottom, #f8fafc, #eef2ff);
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 18px;
   color: #555;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-/* =============================
-   CARDS
-============================= */
+/* =========================
+   CARD
+========================= */
 
 .card {
   background: #ffffff;
   padding: 40px;
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  margin-top: 20px;
 }
 
-/* =============================
+/* =========================
    BUTTON
-============================= */
+========================= */
 
 .btn {
   display: inline-block;
@@ -111,15 +126,15 @@ h2 {
   background-color: #1e40af;
 }
 
-/* =============================
+/* =========================
    SKILLS
-============================= */
+========================= */
 
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .skills-tags span {
@@ -131,14 +146,14 @@ h2 {
   font-weight: 500;
 }
 
-/* =============================
+/* =========================
    PROJECTS
-============================= */
+========================= */
 
 .projects-grid {
   display: grid;
-  gap: 22px;
-  margin-top: 20px;
+  gap: 20px;
+  margin-top: 25px;
 }
 
 .project-card {
@@ -150,30 +165,17 @@ h2 {
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
-.project-card h3 {
-  margin-bottom: 10px;
-}
-
-.project-card p {
-  margin-bottom: 18px;
-  line-height: 1.6;
-}
-
-/* =============================
+/* =========================
    CONTACT
-============================= */
-
-#contact p {
-  margin: 12px 0;
-  line-height: 1.6;
-}
+========================= */
 
 #contact a {
   color: #2563eb;
   text-decoration: none;
+  font-weight: 500;
   word-break: break-word;
 }
 
@@ -181,9 +183,9 @@ h2 {
   text-decoration: underline;
 }
 
-/* =============================
+/* =========================
    FOOTER
-============================= */
+========================= */
 
 footer {
   text-align: center;
@@ -193,44 +195,41 @@ footer {
   font-size: 14px;
 }
 
-/* ==========================================
-   RESPONSIVE BREAKPOINTS
-========================================== */
+/* =========================
+   TABLET (768px)
+========================= */
 
-/* ===== MOBILE 320px ===== */
-@media (max-width: 480px) {
-
-  nav {
-    justify-content: flex-start;
-    gap: 18px;
-    padding: 14px 16px;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-  }
-
-  nav a {
-    font-size: 13px;
-    flex-shrink: 0;
-  }
-
-  nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  section {
-    padding: 60px 14px;
-  }
+@media (max-width: 768px) {
 
   .card {
-    padding: 22px;
+    padding: 28px;
   }
 
-  .hero {
-    padding: 60px 18px 40px;
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero h1 {
-    font-size: 26px;
+    font-size: 30px;
+  }
+}
+
+/* =========================
+   MOBILE (480px / 320px)
+========================= */
+
+@media (max-width: 480px) {
+
+  section {
+    padding: 60px 16px;
+  }
+
+  .hero {
+    padding: 60px 16px 40px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
     line-height: 1.3;
   }
 
@@ -257,28 +256,28 @@ footer {
     font-size: 13px;
     padding: 8px 14px;
   }
-}
 
-/* ===== TABLET 768px ===== */
-@media (min-width: 481px) and (max-width: 768px) {
+  /* Hamburger menu active */
 
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .hamburger {
+    display: block;
   }
 
-  .hero h1 {
-    font-size: 34px;
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #111827;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
   }
-}
 
-/* ===== DESKTOP 1024px+ ===== */
-@media (min-width: 1024px) {
-
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
   }
 
-  .hero h1 {
-    font-size: 42px;
-  }
 }
