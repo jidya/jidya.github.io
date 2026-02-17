@@ -1,10 +1,11 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, #f8fafc, #eef2f7);
+  background: #f1f5f9;   /* soft light gray-blue */
   color: #1f2937;
   margin: 0;
 }
+
 
 nav {
   background: #111827;
@@ -83,9 +84,7 @@ footer {
   padding: 80px 20px;
   max-width: 1100px;
   margin: 0 auto 80px auto;
-  background: #f8fafc;
-  border-radius: 16px;
-
+  background: transparent;   /* keep clean */
 }
 
 .section-title {
@@ -95,21 +94,35 @@ footer {
 
 .projects-grid {
   display: grid;
-  gap: 20px; /* small controlled spacing */
+  gap: 24px; /* small controlled spacing */
+  
 }
 
 .project-card {
   background: #ffffff;
-  padding: 28px;
-  border-radius: 14px;
-  border: 1px solid #e5e7eb;
-  transition: 0.3s ease;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.25s ease;
+  position: relative;
+}
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #2563eb;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
 }
 
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-}
 
 .btn {
   display: inline-block;
