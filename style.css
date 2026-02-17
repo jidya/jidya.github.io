@@ -118,18 +118,19 @@ footer {
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 15px;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .skills-tags span {
-  background: #e0e7ff;
+  background: #eef2ff;
   color: #1e3a8a;
-  padding: 8px 14px;
-  border-radius: 20px;
+  padding: 10px 16px;
+  border-radius: 25px;
   font-size: 14px;
   font-weight: 500;
 }
+
 #contact p {
   margin: 10px 0;
   font-size: 16px;
