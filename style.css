@@ -1,30 +1,26 @@
 body {
     background: red !important;
-}
-
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f6f8;
-  scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    scroll-behavior: smooth;
 }
 
 nav {
-  background: #111827;
-  padding: 15px;
-  text-align: center;
+    background: #111827;
+    padding: 15px;
+    text-align: center;
 }
 
  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+     color: white;
+     margin: 0 15px;
+     text-decoration: none;
+     font-weight: bold;
  }
 
 nav a:hover {
-    color: #60a5fa;
+     color: #60a5fa;
 }
 
 header {
@@ -35,21 +31,21 @@ header {
 }
 
 section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 h2 {
-  color: #1f2937;
+    color: #1f2937;
 }
 
 .card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 25px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
 }
 
 footer {
@@ -60,19 +56,19 @@ footer {
 }
 
 .project-btn {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 8px 16px;
-  background-color: #2ecc71;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: 0.3s ease;
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
         
 .project-btn:hover {
-  background-color: #27ae60;
-  transform: translateY(-2px);
+    background-color: #27ae60;
+    transform: translateY(-2px);
 }
