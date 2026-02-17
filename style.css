@@ -1,11 +1,9 @@
-
 body {
   font-family: 'Inter', sans-serif;
-  background: #f1f5f9;   /* soft light gray-blue */
+  background: linear-gradient(to bottom, #f8fafc, #eef2f7);
   color: #1f2937;
   margin: 0;
 }
-
 
 nav {
   background: #111827;
@@ -13,7 +11,9 @@ nav {
   text-align: center;
   position: sticky;
   top: 0;
+  z-index: 1000;   
 }
+
 
 nav a {
   color: white;
@@ -33,6 +33,7 @@ section {
   padding: 80px 20px;
   max-width: 1100px;
   margin: 0 auto 60px auto;
+  scroll-margin-top: 80px;
 }
 
 
@@ -41,12 +42,7 @@ h2 {
     color: #1f2937;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, #f8fafc, #eef2f7);
-  color: #1f2937;
-  margin: 0;
-}
+
 
 
 
@@ -67,8 +63,6 @@ footer {
   background: linear-gradient(to bottom, #f8fafc, #eef2ff);
 }
 
-
-
 .hero h1 {
   font-size: 38px;
   margin-bottom: 10px;
@@ -80,15 +74,12 @@ footer {
   margin-bottom: 20px;
 }
 
-#projects .card {
-  background: #f8fafc;
+.card {
+  background: #ffffff;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
-
-
-
 
 .section-title {
   margin-bottom: 30px;
@@ -103,6 +94,7 @@ footer {
 
 
 .project-card {
+  position: relative;
   padding: 25px;
   border-radius: 14px;
   transition: all 0.2s ease;
@@ -192,7 +184,4 @@ footer {
 
 #contact a:hover {
   text-decoration: underline;
-}
-section {
-  scroll-margin-top: 80px;
 }
