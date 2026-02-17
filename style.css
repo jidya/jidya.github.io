@@ -32,13 +32,17 @@ nav {
 
 .logo {
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
+}
+
+#menu-toggle {
+  display: none;
 }
 
 .nav-links {
   display: flex;
-  gap: 28px;
+  gap: 30px;
 }
 
 .nav-links a {
@@ -51,12 +55,6 @@ nav {
   color: #60a5fa;
 }
 
-/* Hide checkbox */
-#menu-toggle {
-  display: none;
-}
-
-/* Hamburger hidden by default */
 .hamburger {
   display: none;
   font-size: 26px;
@@ -73,7 +71,7 @@ nav {
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 10px;
 }
 
@@ -172,18 +170,15 @@ footer {
   color: #cbd5e1;
 }
 
-/* ================= MOBILE ONLY ================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
 
-  /* Show hamburger */
   .hamburger {
     display: block;
   }
 
-  /* Hide desktop links */
   .nav-links {
-    display: none;
     position: absolute;
     top: 60px;
     left: 0;
@@ -193,9 +188,9 @@ footer {
     align-items: center;
     padding: 20px 0;
     gap: 20px;
+    display: none;
   }
 
-  /* Show when checked */
   #menu-toggle:checked ~ .nav-links {
     display: flex;
   }
